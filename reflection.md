@@ -23,17 +23,23 @@ Document at least 3 bugs you found. Add rows as needed.
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+Answer: I used the VS Code AI coding assistant Claude.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+Answer: The AI pointed out the inverted hint bug in 'logic_utils.py' where "Too High" was paired with "Go HIGHER". It suggested swapping the messages to the correct directions, and I verified it by checking the code and running the game.
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+Answer: When raw 'pytest' failed due to Windows environment path issues, the AI suggested modifying system PATH variables or reinstalling pytest. However, I found a much simpler workaround by running 'python -m pytest' directly in the terminal, which worked perfectly.
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+Answer: I decided the bug was fixed only when the automated tests('pytest') passed completely and I manually verified that the Streamlit UI hints perfectly matched the secret numbers during actual gameplay.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+Answer: I ran 'python -m pytest' in the terminal, and all 3 test cases passed successfully in 0.04 seconds. This proved that our internal calculation logic was completely fixed and accurate.
 - Did AI help you design or understand any tests? How?
+Answer: Yes, the AI helped me understand how the test code uses mocking to simulate game states. It visually explained how the higher/lower conditions are validated, which made it easy to see how our code changes interacted with the tests.
 
 ---
 
