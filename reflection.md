@@ -14,9 +14,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Guess of 50 (Secret: 85)| Should display "Go Higher" since 50 is less than 85. | Displayed "Go LOWER" | none |
+| Guess of 90 (Secret: 85)| Should display "Go Lower" since 90 is less than 85. | Displayed "Go HIGHER" | none |
+| Guess of 20 (Secret: 85)| Should display "Go Higher" since 20 is less than 85. | Displayed "Go LOWER" | none |
 
 ---
 
